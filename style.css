@@ -1,0 +1,207 @@
+.tab {
+    border-top: 3px solid rgb(213, 138, 187);
+   /* or any other color */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+  }
+  nav a {
+    padding: 10px 40px;
+   /* increase padding to spread the text further */
+  }
+  nav a.active {
+    background-color: rgb(213, 138, 187);
+   /* set the color to pink */
+  }
+  /* Add a pink background color to the active tab */
+  .nav-links a.active {
+    background-color: pink;
+  }
+  body {
+    font-family: Times New Roman;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* add this property to center text vertically */
+    height: 45px;
+   /* adjust height */
+    padding: 0;
+   /* remove padding */
+  }
+  header h1 {
+    margin: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  nav a:hover, nav a.active {
+    background-color: rgb(213, 138, 187);
+    color: white;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    margin: 0 80px;
+  }
+  nav a {
+    background-color: lightgray;
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  nav a.active {
+    background-color: rgb(213, 138, 187);
+   /* set the color to pink */
+  }
+  .tab-content {
+    display: none;
+    padding: 20px;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  .image-container {
+    text-align: left;
+  }
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .image-title {
+    font-family: Times New Roman;
+    font-size: 25px;
+    text-align: center;
+  }
+  .image-title2 {
+    font-family: Times New Roman;
+    font-size: 16px;
+    text-align: center;
+  }
+  .col2-title {
+    font-family: Times New Roman;
+    font-size: 40px;
+  }
+  .text {
+    font-family: Times New Roman;
+    font-size: 16px;
+  }
+  .text-skills {
+    font-family: Times New Roman;
+    font-size: 20px;
+  }
+  .table {
+    padding-right: 100px;
+  }
+  .email{
+    font-family: Times New Roman;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(213, 138, 187);
+  }
+  .col1 {
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    border-right: 1px solid rgb(213, 138, 187);
+  }
+  .col2 {
+    float: right;
+    width: 70%;
+    padding: 10px;
+    margin-left: -10px;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  footer {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer p {
+    margin: 0;
+    text-align: center;
+  }
+  progress {
+    width: 400px;
+   /* adjust the width to 300 pixels */
+    height: 15px;
+  }
+  body {
+    overflow-y: hidden;
+  }
+  @media (max-width: 800px) {
+    .col1 {
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+   }
+    .col2 {
+        float: none;
+        width: 100%;
+        height: auto;
+        text-align: center;
+   }
+  }
+  hr {
+    width: 100%;
+    border-top: 1px solid rgb(213, 138, 187);
+  }
+  @media (min-width: 800px) {
+    hr {
+        display: none;
+   }
+  }
+  .left-column {
+    position: relative;
+  }
+  @media only screen and (max-width: 768px) {
+    .left-column {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+   }
+  }
+  @media (max-width: 800px) {
+    .table {
+        width: 100%;
+        overflow-x: scroll;
+   }
+  }
+  .table-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  table {
+    width: 100%;
+  }
+  
